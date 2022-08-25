@@ -1,0 +1,52 @@
+.card {
+  width: 90%;
+  max-width: 545px;
+  border-radius: 15px;
+  background-color: var(--darkGrayishBlue);
+  padding: 36px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.neonText {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: var(--neonGreen);
+  margin-bottom: 36px;
+}
+
+.advice {
+  font-size: 28px;
+  color: var(--primaryLight);
+  letter-spacing: 1px;
+}
+
+.divider {
+  margin: 36px 0;
+  width: 100%;
+  height: 16px;
+  background-image: url("../../assets/pattern-divider-mobile.svg");
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--neonGreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .divider {
+    background-image: url("../../assets/pattern-divider-desktop.svg");
+    background-size: cover;
+    height: 18px;
+  }
+}
